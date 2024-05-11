@@ -16,6 +16,7 @@ body {
   height: 100vh;
   max-width: 1180px;
   display: flex;
+  flex-direction: row;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -44,8 +45,19 @@ body {
   border: 1px solid black;
 }
 
+.startGame img {
+  width: 50vw;
+}
+
+.startGame .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
 .startGame .content h1 {
-  font-size: 96px;
+  font-size: 6vw;
   white-space: nowrap;
 }
 
@@ -156,6 +168,20 @@ main {
 }
 
 @media screen and (max-width: 780px) {
+  .startGame {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .startGame .content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .startGame .content h1 {
+    font-size: 12vw;
+
+  }
   .topSection {
     flex-direction: column;
     gap: 30px;
