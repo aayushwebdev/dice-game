@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.startGame {
+  height: 100vh;
+  max-width: 1180px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  min-width: 220px;
+  border: 1px solid transparent;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  background:#fff;
+  color: #000;
+  border: 1px solid black;
+}
+
+.startGame .content h1 {
+  font-size: 96px;
+  white-space: nowrap;
+}
+
+main {
+  padding: 50px;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scoreContainer {
+  max-width: 200px;
+  text-align: center;
+}
+
+.scoreContainer h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+ p {
+  font-size:24px;
+  font-weight: 500;
+}
+
+.numberContainer {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ align-items: end;
+}
+
+.numberArray {
+  display: flex;
+  gap: 24px;
+}
+
+.numberContainer .box {
+  height: 72px;
+  width: 72px;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.roleDice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.roleDice .dice {
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 30px 0;
+}
+
+.btn-white{
+  background-color: #fff;
+  border: 1px solid black;
+  color: #000;
+}
+.btn-white:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.rulesContainer {
+  background-color: #fbf1f1;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.rulesContainer h2 {
+  font-size: 24px;
+}
+
+.rulesContainer .text {
+  margin-top: 24px;
+}
+
+.rulesContainer .text p {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+@media screen and (max-width: 780px) {
+  .topSection {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .numberContainer {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .scoreContainer h1 {
+    font-size: 70px;
+  }
+  .numberContainer .box {
+    height: 10vw;
+    width: 10vw;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
